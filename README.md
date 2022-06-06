@@ -175,15 +175,15 @@ Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IF
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Jose-IFR/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Jose-IFR/testing.svg?style=for-the-badge
 [contributors-url]: https://github.com/Jose-IFR/testing/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Jose-IFR/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Jose-IFR/testing.svg?style=for-the-badge
 [forks-url]: https://github.com/Jose-IFR/testing/network/members
-[stars-shield]: https://img.shields.io/github/stars/Jose-IFR/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Jose-IFR/testing.svg?style=for-the-badge
 [stars-url]: https://github.com/Jose-IFR/testing/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Jose-IFR/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Jose-IFR/testing.svg?style=for-the-badge
 [issues-url]: https://github.com/Jose-IFR/testing/issues
-[license-shield]: https://img.shields.io/github/license/Jose-IFR/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Jose-IFR/testing.svg?style=for-the-badge
 [license-url]: https://github.com/Jose-IFR/testing/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joseibarrafloresramirez/
