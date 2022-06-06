@@ -9,10 +9,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[vtexio-shield]
-[forks-shield]
-[stars-shield]
-[issues-shield]
+[![VTEX][vtexio-shield]
+[![Forks][forks-shield]
+[![Stargazers][stars-shield]
+[![Issues][issues-shield]
 
 <!-- [![MIT License][license-shield]][license-url] -->
 
