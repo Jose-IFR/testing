@@ -9,8 +9,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
+[![VTEX][vtex-shield]]
+[![Forks][forks-shield]]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
@@ -175,8 +175,7 @@ Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IF
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/badge/VTEX-VTEX%20IO-%23ff69b4
-[contributors-url]: https://github.com/Jose-IFR/testing/graphs/contributors
+[vtexio-shield]: https://img.shields.io/badge/VTEX-%20IO-%23ff69b4
 [forks-shield]: https://img.shields.io/github/forks/Jose-IFR/testing.svg?style=for-the-badge
 [forks-url]: https://github.com/Jose-IFR/testing/network/members
 [stars-shield]: https://img.shields.io/github/stars/Jose-IFR/testing.svg?style=for-the-badge
