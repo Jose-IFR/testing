@@ -9,7 +9,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![VTEX][vtex-shield]][]
+[![VTEX][vtexio-shield]][]
 [![Forks][forks-shield][]
 [![Stargazers][stars-shield]][]
 [![Issues][issues-shield]][]
