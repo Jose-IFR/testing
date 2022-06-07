@@ -51,11 +51,12 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 
 ## Getting Started
 
-
 ### Install service in your store
 
 1. VTEX CLI
-   ```vtex install vtex.paypal-utils```
+   ```sh
+   vtex install vtex.paypal-utils
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
