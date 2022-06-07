@@ -10,13 +10,7 @@
 -->
 
 ![VTEX][vtexio-shield]
-![Forks][forks-shield]
-![Stargazers][stars-shield]
-![Issues][issues-shield]
-
-<!-- [![MIT License][license-shield]][license-url] -->
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
+![Mantained][maintained-shield]
 
 # NOT MANTAINED
 
@@ -24,7 +18,6 @@
 <br />
 <div align="center">
   <h3 align="center">Paypal Service utils</h3>
-  <p align="center">This code is shared AS-IS and will not be mantained any further</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -33,21 +26,14 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -176,7 +162,7 @@ Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IF
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [vtexio-shield]: https://img.shields.io/badge/VTEX-%20IO-%23ff69b4
-
+[maintained-shield]: https://img.shields.io/badge/Mantained-%20NO-%23ff0000
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joseibarrafloresramirez/
 [product-screenshot]: images/screenshot.png
