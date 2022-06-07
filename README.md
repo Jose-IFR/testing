@@ -3,18 +3,11 @@
 ![VTEX][vtexio-shield]
 ![Mantained][maintained-shield]
 
-# NOT MANTAINED
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <h3 align="center">Paypal Service utils</h3>
-  <p align="center">The objective of this app is to cancel Paypal standing orders every N amount of time configured.
-</div>
+# Paypal Service utils 
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary><h3>Table of Contents</h3></summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -33,15 +26,15 @@
   </ol>
 </details>
 
+<br />
+
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
 This code is provided as is, use it and customize it at your risk and convenience.
 
-The objective of this app is to manage the cancelation of Paypal standing orders every N amount of time configured.
+The objective of this app is to manage the cancelation of Paypal incomplete orders with a custom frequency.
 
 ![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
 
@@ -50,62 +43,32 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-1. Install service in your store using the following VTEX CLI command
+### Installation
+- Use the following VTEX CLI command to install the service in your store
    ```
    vtex install vtex.paypal-utils
    ```
-2. Get and setup a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
+### Usage
+1. Setup a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
+
    ![Google Scheduler Screen](https://user-images.githubusercontent.com/65255533/110838782-7c62ee00-8268-11eb-8a41-71cb5ae1927b.png)
 
-3. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
-   - Use a a unix cron to do so like this for each 5 to 10 minutes depending on the volume of PayPal orders recived
-   `*/10 * * * *`
+2. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
 
+   - URL: `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`    
+   - Frequency: `*/10****`    
 
-- `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`
-
-<blockquote>
-  <p dir="auto">
-    <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
-    <strong>The recommened schedule run for the process is between 5 to 10 minutes, depending on the amount of Paypal orders recived</strong>
-  </p>
-</blockquote>
+  <blockquote>
+    <p dir="auto">
+      <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
+      <strong>The recommened frequency for this unix cron process is between 5 to 10 minutes, depending on the amount of Paypal orders recived</strong>
+    </p>
+  </blockquote>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Recomendation
-
-Use a a unix cron to do so like this for each 5 to 10 minutes depending on the volume of PayPal orders recived
-
-`*/10 * * * *`
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
-
-See the [open issues](https://github.com/Jose-IFR/testing/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
+<!-- ARQUITECTURE -->
+## Arquitecture
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
