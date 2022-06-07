@@ -51,9 +51,8 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 
 ## Getting Started
 
-### Install service in your store using VTEX CLI
-
-1. ```
+1. Install service in your store using VTEX CLI
+   ```
    vtex install vtex.paypal-utils
    ```
 2. Get a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
