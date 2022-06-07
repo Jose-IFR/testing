@@ -34,7 +34,7 @@ This code is provided as is, use it and customize it at your risk and convenienc
 
 The objective of this app is to manage the cancelation of Paypal incomplete orders with a custom frequency.
 
-![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
+![Service Example Architecture][arquitecture-screenshot]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -53,7 +53,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 1. Setup a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
 
-   ![Google Scheduler Screen](https://user-images.githubusercontent.com/65255533/110838782-7c62ee00-8268-11eb-8a41-71cb5ae1927b.png)
+   ![Google Scheduler Screen][scheduler-screenshot]
 
 2. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
 
@@ -72,8 +72,8 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 <!-- ARQUITECTURE -->
 
 ## Arquitecture
-
-### Manifest.json
+1. The policies in the manifest.json
+![Manifest][manifest-screenshot]
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -96,11 +96,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IFR/repo_name)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -119,6 +114,6 @@ Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IF
 
 [vtexio-shield]: https://img.shields.io/badge/VTEX-%20IO-%23ff69b4
 [maintained-shield]: https://img.shields.io/badge/MANTAINED-%20NO-%23ff0000
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/joseibarrafloresramirez/
-[product-screenshot]: images/screenshot.png
+[arquitecture-screenshot]: https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg
+[scheduler-screenshot]: https://user-images.githubusercontent.com/65255533/110838782-7c62ee00-8268-11eb-8a41-71cb5ae1927b.png
+[manifest-screenshot]: https://raw.githubusercontent.com/Jose-IFR/testing/fd460da876789e610f745652902bd124aab21b65/blob/code.png
