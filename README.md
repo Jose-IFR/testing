@@ -56,10 +56,17 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 1. ```sh
    vtex install vtex.paypal-utils
    ```
+2. Get a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
+
+3. Once you have your cron scheduler in place, send a request to activate the process every N minutes
+
+<blockquote>
+<p dir="auto"><g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> <strong>It is recommened to run the process every 5 to 10 minutes depending on the amount of Paypal orders recived</strong></p>
+</blockquote>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Recomendation
+### Recomendation
 
 Use a a unix cron to do so like this for each 5 to 10 minutes depending on the volume of PayPal orders recived
 
