@@ -3,7 +3,7 @@
 ![VTEX][vtexio-shield]
 ![Mantained][maintained-shield]
 
-# Paypal Service utils 
+# Paypal Service utils
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -26,8 +26,6 @@
   </ol>
 </details>
 
-<br />
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -43,20 +41,24 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 <!-- GETTING STARTED -->
 
 ## Getting Started
+
 ### Installation
+
 - Use the following VTEX CLI command to install the service in your store
-   ```
-   vtex install vtex.paypal-utils
-   ```
+  ```
+  vtex install vtex.paypal-utils
+  ```
+
 ### Usage
+
 1. Setup a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
 
    ![Google Scheduler Screen](https://user-images.githubusercontent.com/65255533/110838782-7c62ee00-8268-11eb-8a41-71cb5ae1927b.png)
 
 2. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
 
-   - URL: `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`    
-   - Frequency: `*/10****`    
+   - URL: `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`
+   - Frequency: `*/10****`
 
   <blockquote>
     <p dir="auto">
@@ -68,6 +70,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ARQUITECTURE -->
+
 ## Arquitecture
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
