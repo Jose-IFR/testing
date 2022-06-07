@@ -58,7 +58,9 @@ The objective of this app is to manage the cancelation of Paypal standing orders
    ```
 2. Get a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
 
-3. Once you have your cron scheduler in place, send a request to activate the process every N minutes
+3. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
+
+`https://{{account}}.myvtex.com/_v/payPal2?cancel=true`
 
 <blockquote>
   <p dir="auto">
