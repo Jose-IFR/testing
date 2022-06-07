@@ -39,11 +39,11 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
-
 This code is provided as is, use it and customize it at your risk and convenience.
 
 The objective of this app is to manage the cancelation of Paypal standing orders every N amount of time configured.
+
+![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -56,12 +56,15 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 1. ```sh
    vtex install vtex.paypal-utils
    ```
-2. Get a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
+2. Get a cloud cron job scheduler, we suggest ***Google Cloud Scheduler***, however you can use whichever you decide.
 
 3. Once you have your cron scheduler in place, send a request to activate the process every N minutes
 
 <blockquote>
-<p dir="auto"><g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> <strong>It is recommened to run the process every 5 to 10 minutes depending on the amount of Paypal orders recived</strong></p>
+  <p dir="auto">
+    <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️ </g-emoji>
+    <strong>It is recommened to run the process every 5 to 10 minutes depending on the amount of Paypal orders recived</strong>
+  </p>
 </blockquote>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
