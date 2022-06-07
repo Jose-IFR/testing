@@ -18,6 +18,7 @@
 <br />
 <div align="center">
   <h3 align="center">Paypal Service utils</h3>
+  <p align="center">A refencing app implementing a VTEX IO service to cancel Paypal standing orders
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -34,6 +35,9 @@
         <li><a href="#usage">Usage</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#customization">Customization</a>
+    </li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -42,7 +46,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+
+![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
