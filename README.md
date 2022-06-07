@@ -1,9 +1,9 @@
 <div id="top"></div>
 
+# Paypal Service utils
+
 ![VTEX][vtexio-shield]
 ![Mantained][maintained-shield]
-
-# Paypal Service utils
 
 <!-- TABLE OF CONTENTS -->
 <details>
