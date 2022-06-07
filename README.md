@@ -53,7 +53,7 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 
 ### Install service in your store using VTEX CLI
 
-1. ```sh
+1. ```
    vtex install vtex.paypal-utils
    ```
 2. Get a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
@@ -63,7 +63,7 @@ The objective of this app is to manage the cancelation of Paypal standing orders
 <blockquote>
   <p dir="auto">
     <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
-    <strong>The recommened cyle to run the process is between 5 to 10 minutes, depending on the amount of Paypal orders recived</strong>
+    <strong>The recommened schedule run for the process is between 5 to 10 minutes, depending on the amount of Paypal orders recived</strong>
   </p>
 </blockquote>
 
