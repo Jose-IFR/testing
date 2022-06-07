@@ -1,14 +1,5 @@
 <div id="top"></div>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 ![VTEX][vtexio-shield]
 ![Mantained][maintained-shield]
 
@@ -18,7 +9,7 @@
 <br />
 <div align="center">
   <h3 align="center">Paypal Service utils</h3>
-  <p align="center">A refencing app implementing a VTEX IO service to cancel Paypal standing orders
+  <p align="center">The objective of this app is to cancel Paypal standing orders every N amount of time configured.
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -50,20 +41,9 @@
 
 ![Service Example Architecture](https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This code is provided as is, use it and customize it at your risk and convenience.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Built With
-
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+The objective of this app is to manage the cancelation of Paypal standing orders every N amount of time configured.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -71,22 +51,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Install service in your store
 
 1. VTEX CLI
-   `vtex install vtex.paypal-utils`
+   ```vtex install vtex.paypal-utils```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
