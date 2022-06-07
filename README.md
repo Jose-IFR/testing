@@ -2,8 +2,8 @@
 
 # Paypal Service utils
 
-![VTEX][vtexio-shield]
-![Mantained][maintained-shield]
+![vtex-version][vtexio-shield]
+![maintained-status][maintained-shield]
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -20,7 +20,7 @@
       </ul>
     </li>
     <li>
-      <a href="#customization">Customization</a>
+      <a href="#arquitecture">Architecture</a>
     </li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -73,7 +73,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 ## Arquitecture
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+### Manifest.json
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -118,7 +118,7 @@ Project Link: [https://github.com/Jose-IFR/repo_name](https://github.com/Jose-IF
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [vtexio-shield]: https://img.shields.io/badge/VTEX-%20IO-%23ff69b4
-[maintained-shield]: https://img.shields.io/badge/Mantained-%20NO-%23ff0000
+[maintained-shield]: https://img.shields.io/badge/MANTAINED-%20NO-%23ff0000
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joseibarrafloresramirez/
 [product-screenshot]: images/screenshot.png
