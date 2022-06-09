@@ -116,4 +116,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [maintained-shield]: https://img.shields.io/badge/MANTAINED-%20NO-%23ff0000
 [arquitecture-screenshot]: https://user-images.githubusercontent.com/18706156/77381360-72489680-6d5c-11ea-9da8-f4f03b6c5f4c.jpg
 [scheduler-screenshot]: https://user-images.githubusercontent.com/65255533/110838782-7c62ee00-8268-11eb-8a41-71cb5ae1927b.png
-[manifest-screenshot]: https://raw.githubusercontent.com/Jose-IFR/testing/b21faa98c6dfb86b05356d8ff83bed34266e0990/blob/code.png
+[manifest-screenshot]: /blob/code.png
