@@ -44,10 +44,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 ### Installation
 
-- Use the following VTEX CLI command to install the service in your store
-  ```
-  vtex install vtex.paypal-utils
-  ```
+- Use the following VTEX CLI command `vtex install vtex.paypal-utils` to install the service in your store
 
 ### Usage
 
