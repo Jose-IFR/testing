@@ -71,31 +71,28 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 <!-- ARQUITECTURE -->
 
-## Arquitecture
-1. The policies in the manifest.json
-![Manifest][manifest-screenshot]
+## File arquitecture for this app
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. ### manifest.json policies
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<img src="https://user-images.githubusercontent.com/105675260/172765222-10483ca8-5f66-449d-8a33-984127a2e0aa.png" alt="drawing" width="600"/>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+2. ### middlewares
 
-<!-- LICENSE -->
+- PayPal2.ts
+- PayPalOrders.ts
 
-## License
+3. ### clients
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+- PayPalUtils.ts
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+4. ### utils
 
-<!-- CONTACT -->
-
+- authToken.js
+- cachedContext.ts
+- seller.js
+- statusError.ts
+- tracing.js
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,9 +100,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgments
 
-- []()
-- []()
-- []()
+- Rodrigo Olivera
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
