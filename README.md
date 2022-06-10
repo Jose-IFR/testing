@@ -1,5 +1,11 @@
 <div id="top"></div>
 
+#       <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>Maintenance      <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
+
+* This application is not maintained by the VTEX team 
+
+<hr />
+
 # Paypal Service utils
 
 ![vtex-version][vtexio-shield]
