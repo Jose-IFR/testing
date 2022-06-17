@@ -4,11 +4,9 @@
 
 ![vtex-version][vtexio-shield]
 ![maintained-status][maintained-shield]
-## <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> IMPORTANT <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
+## DISCLAIMER
 
-* This application is not maintained by the VTEX team 
-
-<hr />
+* This feature is not maintained by the VTEX.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -30,6 +28,7 @@
         <li><a href="#manifest.json">Manifest</a></li>
         <li><a href="#middlewares">Middlewares</a></li>
         <li><a href="#clients">Clients</a></li>
+        <li><a href="#index.ts">index.ts</a></li>
       </ul>
     </li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -78,7 +77,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 ## How does this service work?
 
-### 1. manifest.json
+### manifest.json
   
    The manifest.json file has specific access policies, in this specific case, we have the outbound for the vtex portal account.
 
@@ -88,7 +87,7 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
   <p align="right">(<a href="#top">back to top</a>)</p>
 
-### 2. Middlewares
+### Middlewares
 
 The middlewares for this service are _PayPal2.ts_ and _PayPalOrders.ts_
 
@@ -157,7 +156,7 @@ The middlewares for this service are _PayPal2.ts_ and _PayPalOrders.ts_
 
     For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/listorders">here</a>
   
-### 3. Clients  
+### Clients  
 The client for this service is _PayPalUtils.ts_  
 
 - ### PayPalUtils.ts  
@@ -186,12 +185,12 @@ The client for this service is _PayPalUtils.ts_
 
     For more on the API, click <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-how-to-create-and-use-clients">here</a>
 
-### 4. index.ts
+### index.ts
  This file will export the service object and will import necessary methods to use that are in vtex API, middlewares and clients.  
 
 <img src="https://user-images.githubusercontent.com/105675260/174406468-cfb707d5-0b19-4b16-ba8c-659b5c15b63c.png" slt="drawing" width="600" />
 
-### 5. utils
+### utils
 
   These are utilitarian methods used through out the service, please read through them carefully
 
