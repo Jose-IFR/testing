@@ -68,32 +68,105 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
    ![Google Scheduler Screen][scheduler-screenshot]
 
 
-  
-
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ARQUITECTURE -->
 
 ## How does this app work?
 
-1. ###  Policies in manifest.json
+### 1. Policies in manifest.json
   
    The manifest.json file has specific access policies, in this specific case, we have the outbound for the vtex portal account.
 
+  <img src="https://user-images.githubusercontent.com/105675260/172765222-10483ca8-5f66-449d-8a33-984127a2e0aa.png" alt="drawing" width="450"/>  
 
-<img src="https://user-images.githubusercontent.com/105675260/172765222-10483ca8-5f66-449d-8a33-984127a2e0aa.png" alt="drawing" width="600"/>
+  For more on the manifest configuration please click <a href="https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-manifest">here</a>  
 
-2. ### middlewares
+  <p align="right">(<a href="#top">back to top</a>)</p>
 
-- PayPal2.ts
-- PayPalOrders.ts
+### 2. Middlewares
 
-3. ### clients
+The middlewares for this service are _PayPal2.ts_ and _PayPalOrders.ts_
 
-- PayPalUtils.ts
+- ### PayPal2.ts  
+  This middleware has the following functions:  
+  - #### listTransactions  
+     This function will iterate over all the payments on your VTEX store and filter the paypal transactions with status _authorizing_ within a time period.  
 
-4. ### utils
+    <img src="https://user-images.githubusercontent.com/105675260/174364976-b5fc777b-2965-4dcd-98fe-d85f2a1e1bd2.png" alt="drawing" width="450"/>
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/getpaymenttransaction">here</a>
+
+  - #### interactions 
+    This function will iterate over the transactionList given by listTransactions and will filter all the paypal paymentInteractions in order to get the id and authToken  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174387522-eca7fd39-f62f-4e85-9579-d93fca63cfdd.png" alt="drawing" width="450"/>  
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/getpaymenttransaction">here</a>  
+
+  - #### cancel  
+    This function will iterate over the interactions and impact Paypal's API sending the TransactionId and value of the order to cancel.  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174387305-3c116940-a40f-4624-a722-8c3db09e0f00.png" alt="drawing" width="450"/>
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/getpaymenttransaction">here</a>  
+
+<p align="right">(<a href="#top">back to top</a>)</p>  
+
+- ### PayPalOrders.ts  
+  This middleware has the following functions:
+
+  - #### listOrders  
+    This function will iterate over all the orders given to it which are paid with paypal in which the incompleteOrders status is _true_ and within a time period.  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174396605-d98c3124-18be-469b-b7ea-85ea73548734.png" alt="drawing" width="450"/>
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/getpaymenttransaction">here</a>  
+
+  - #### listTransactions  
+    This function will iterate over all the payments on your VTEX store and filter the paypal transactions with status _authorizing_ within a time period.  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174396674-97f2f2d0-cb16-41ec-b369-0c9ef4b91b08.png" alt="drawing" width="450"/>  
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/getpaymenttransaction">here</a>
+  - #### listOrdersDetail  
+    This function will list the details of all the orders given to it based on the orderId given and the vtex authToken.
+
+    <img src="https://user-images.githubusercontent.com/105675260/174396739-71a942ac-4461-4109-b7b2-95ccee623286.png" alt="drawing" width="450"/>  
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/listorders">here</a>
+
+  - #### paymentInteractions  
+    This function has three steps,  
+    - it will first push to the _transactionsList_ array all the orders with their details.  
+    - Then, it will map _transactionsList_ in order to loop over the specific interactions of the order to check if it's canceled or not and push it to the _i_ array.  
+    - Then it will check if the order is in fact waiting to be canceled based on the messege.  
+    
+    <img src="https://user-images.githubusercontent.com/105675260/174398158-c8d27202-1256-4944-bfdb-e692049c351c.png" alt="drawing" width="450"/>  
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/listorders">here</a>
+
+  - #### cancelTransaction  
+    This function will cancel all the interactions given to it by passing the cancelation interaction to the gateway give.  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174398676-351997c9-d9fe-4b9b-8382-ae40062891fa.png" alt="drawing" width="450"/>  
+
+    For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/listorders">here</a>
+  
+### 3. Clients
+The client for this service is _PayPalUtils.ts_  
+
+- ### PayPalUtils.ts  
+  This client will be explained in parts:  
+    1. _Imports_ from the @vtex/api and _routes_ which will be used to access the payments, orders and transactions APIs which we will use with the functions in our middlewares.  
+
+    <img src="https://user-images.githubusercontent.com/105675260/174399959-85139ab7-49f5-4e90-9d8e-b9ffaf82e600.png" alt="drawing" width="450"/>  
+
+  For more on the API, click <a href="https://developers.vtex.com/vtex-rest-api/reference/payments-gateway-api-overview">here</a>
+
+### 4. utils
+
+  This are utilitarian files used through out the service, please read through them carefully
 
 - authToken.js
 - cachedContext.ts
