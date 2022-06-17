@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-#       <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>Maintenance      <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
+# <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> IMPORTANT <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
 
 * This application is not maintained by the VTEX team 
 
@@ -48,35 +48,39 @@ The objective of this app is to manage the cancelation of Paypal incomplete orde
 
 ## Getting Started
 
-### Installation
+### App installation
 
-- Use the following VTEX CLI command `vtex install vtex.paypal-utils` to install the service in your store
+- Use the following VTEX CLI command to install the service in your store  
+`vtex install vtex.paypal-utils`
 
 ### Usage
 
-1. Setup a cloud cron job scheduler, we suggest **_Google Cloud Scheduler_**, however you can use whichever you decide.
+1. Setup a cron job to request the activation of the app with a suggested frequency of 5 to 10 mins, depending on your store's order volume.
+
+   - URL: `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`
+   
+   - Frequency: `*/10****`  
+
+
+  <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️ </g-emoji>
+  <strong>If you don't have a dedicated server to run your cron jobs, then we suggest using **_Google Cloud Scheduler_**, however you can use the service of your choice.</strong></p></blockquote>
 
    ![Google Scheduler Screen][scheduler-screenshot]
 
-2. Once you have your cron scheduler ready to be configured, setup a request to activate the process every N minutes.
 
-   - URL: `https://{{account}}.myvtex.com/_v/payPal2?cancel=true`
-   - Frequency: `*/10****`
+  
 
-  <blockquote>
-    <p dir="auto">
-      <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️  </g-emoji>
-      <strong>The recommened frequency for this unix cron process is between 5 to 10 minutes, depending on the amount of Paypal orders recived</strong>
-    </p>
-  </blockquote>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ARQUITECTURE -->
 
-## File arquitecture for this app
+## How does this app work?
 
-1. ### manifest.json policies
+1. ###  Policies in manifest.json
+  
+   The manifest.json file has specific access policies, in this specific case, we have the outbound for the vtex portal account.
+
 
 <img src="https://user-images.githubusercontent.com/105675260/172765222-10483ca8-5f66-449d-8a33-984127a2e0aa.png" alt="drawing" width="600"/>
 
