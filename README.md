@@ -6,7 +6,9 @@
 ![maintained-status][maintained-shield]
 ## DISCLAIMER
 
-* This feature is not maintained by the VTEX.
+* The code is supplied as-is and is not maintained by the VTEX.
+* The maintanance and development of new functionalities is responsability of whomever installs it on their store.
+* This code is not property of VTEX.
 
 <!-- TABLE OF CONTENTS -->
 <details>
