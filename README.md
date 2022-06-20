@@ -4,9 +4,9 @@
 
 ![vtex-version][vtexio-shield]
 ![maintained-status][maintained-shield]
-## DISCLAIMER
+## <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️ </g-emoji>DISCLAIMER<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png"> ⚠️</g-emoji>
 
-* The code is supplied as-is and is not maintained by the VTEX.
+* The code is supplied as-is and is not maintained by VTEX.
 * The maintanance and development of new functionalities is responsability of whomever installs it on their store.
 * This code is not property of VTEX.
 
